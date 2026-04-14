@@ -3,19 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <title>Baixar Informa Capau</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsivo -->
   <style>
     body {
       font-family: Arial, sans-serif;
       text-align: center;
-      margin-top: 80px;
+      margin: 0;
       background-color: #f5f5f5;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background: linear-gradient(90deg, #2e7d32, #66bb6a);
+      padding: 20px;
+      color: white;
     }
     h1 {
-      color: #2e7d32;
+      margin: 0;
+      font-size: 32px;
+    }
+    main {
+      flex: 1;
+      padding: 40px 20px;
     }
     p {
       font-size: 18px;
       margin-bottom: 30px;
+      color: #333;
     }
     .download-btn {
       background-color: #2e7d32;
@@ -26,17 +41,33 @@
       border-radius: 8px;
       cursor: pointer;
       text-decoration: none;
+      transition: background-color 0.3s ease;
     }
     .download-btn:hover {
       background-color: #1b5e20;
     }
+    footer {
+      background-color: #e0e0e0;
+      padding: 15px;
+      font-size: 14px;
+      color: #555;
+    }
   </style>
 </head>
 <body>
-  <h1>Informa Capau</h1>
-  <p>Baixe o aplicativo oficial em formato APK para Android.</p>
-  <a href="InformaCapau-1.0.0.apk" class="download-btn" download>
-    📥 Download APK
-  </a>
+  <header>
+    <h1>Informa Capau</h1>
+  </header>
+
+  <main>
+    <p>Baixe o aplicativo oficial em formato APK para Android.</p>
+    <a href="InformaCapau-1.0.4.apk" class="download-btn" download>
+      📥 Download APK
+    </a>
+  </main>
+
+  <footer>
+    Desenvolvido por Ítalo Silva - © 2026 Todos os direitos reservados
+  </footer>
 </body>
 </html>

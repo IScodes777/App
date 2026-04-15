@@ -1,120 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <title>Baixar Informa Capau</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsivo -->
-  <style>
-    body {
-      font-family: 'Segoe UI', Arial, sans-serif;
-      margin: 0;
-      background-color: #f9f9f9;
-      color: #333;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-    header {
-      background: linear-gradient(90deg, #2e7d32, #66bb6a);
-      padding: 30px 20px;
-      color: white;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 36px;
-    }
-    main {
-      flex: 1;
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: auto;
-      text-align: center;
-    }
-    main h2 {
-      font-size: 24px;
-      margin-bottom: 15px;
-      color: #2e7d32;
-    }
-    main p {
-      font-size: 18px;
-      margin-bottom: 25px;
-      line-height: 1.6;
-    }
-    ul {
-      text-align: left;
-      max-width: 600px;
-      margin: 20px auto;
-      padding: 0;
-      list-style: none;
-    }
-    ul li {
-      background: #e8f5e9;
-      margin: 8px 0;
-      padding: 12px;
-      border-radius: 6px;
-      font-size: 16px;
-    }
-    .download-btn {
-      background-color: #2e7d32;
-      color: white;
-      padding: 15px 35px;
-      font-size: 20px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-      display: inline-block;
-      margin-top: 20px;
-    }
-    .download-btn:hover {
-      background-color: #1b5e20;
-    }
-    footer {
-      background-color: #e0e0e0;
-      padding: 15px;
-      font-size: 14px;
-      color: #555;
-      text-align: center;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Informa Capau</h1>
-    <p>O aplicativo oficial de informações do IFPI Campus Paulistana</p>
-  </header>
+    <head>
+        <meta charset="UTF-8">
+        <title>Informa Capau</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/public/style/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo-format">
+                <img src="/public/imagens/App-logo.png" class="logo">
+                <h3>Informa IFPI Capau</h3>
+            </div>
+            <button class="menu-toggle">☰</button>
+            <nav class="hotbar">
+                <ul>
+                <li><a href="/public/index.html" class="active">Início</a></li>
+                <li><a href="/public/men-html/suport.html">Suporte</a></li>
+                <li><a href="/men-html/termos.html">Termos de Uso</a></li>
+                </ul>
+            </nav>
+        </header>
 
-  <main>
-    <h2>📱 Sobre o App</h2>
-    <p>
-      O <strong>Informa Capau</strong> foi desenvolvido para facilitar o acesso às notícias,
-      comunicados e informações importantes do IFPI Campus Paulistana. 
-      Tenha tudo na palma da sua mão, de forma rápida e prática.
-    </p>
+        <section class="hero">
+            <div class="overlay">
+                <h1>Informa Capau</h1>
+                <p>Centralize todas as informações do IFPI Campus Paulistana em um só lugar</p>
+                <a href="InformaCapau_1.1.0.apk" class="download-btn" download>📥 Baixar Agora</a>
+            </div>
+        </section>
 
-    <h2>✨ Recursos principais</h2>
-    <ul>
-      <li>Notícias e comunicados atualizados</li>
-      <li>Agenda de eventos do campus</li>
-      <li>Informações acadêmicas e administrativas</li>
-      <li>Interface simples e intuitiva</li>
-    </ul>
+        <main>
+            <section class="cards">
+                <a href="https://www.ifpi.edu.br/paulistana/noticias" target="_blank" class="card">
+                    <h2>📢 Notícias</h2>
+                    <p>Comunicados e atualizações do campus.</p>
+                </a>
 
-    <h2>📥 Instalação</h2>
-    <p>
-      Para instalar, baixe o arquivo APK e abra no seu celular Android. 
-      Talvez seja necessário permitir a instalação de apps fora da Play Store.
-    </p>
+                <a href="https://oportunidades.ifpi.edu.br/" target="_blank" class="card">
+                    <h2>🎯 Oportunidades</h2>
+                    <p>Editais, seleções e chances acadêmicas.</p>
+                </a>
 
-    <a href="InformaCapau_1.1.0.apk" class="download-btn" download>
-      📥 Baixar APK
-    </a>
-  </main>
+                <a href="https://www.ifpi.edu.br/paulistana" target="_blank" class="card">
+                    <h2>📚 Informações</h2>
+                    <p>Dados acadêmicos e administrativos.</p>
+                </a>
+            </section>
 
-  <footer>
-    Desenvolvido por Ítalo Silva - © 2026 Todos os direitos reservados
-  </footer>
-</body>
+
+            <section class="screenshots">
+                <h2>📸 Veja como funciona</h2>
+                <div class="gallery">
+                <img src="/public/imagens/principal-1.jpg" alt="Tela inicial do app">
+                <img src="/public/imagens/ajuda.jpg" alt="Perguntas sobre o app">
+                <img src="/public/imagens/organização.jpg" alt="Organização do Capau">
+                </div>
+            </section>
+        </main>
+
+    </body>
 </html>

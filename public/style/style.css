@@ -1,0 +1,233 @@
+/* Gerais */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  background-color: #f9f9f9;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #2e7d32;
+}
+
+section p {
+  font-size: 18px;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+/* Listas */
+ul {
+  text-align: left;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 0;
+  list-style: none;
+}
+
+ul li {
+  background: #e8f5e9;
+  margin: 8px 0;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+/* Footer */
+footer {
+  background-color: #e0e0e0;
+  padding: 15px;
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+}
+
+/* Barra superior fixa */
+header {
+  background: #fff;
+  color: #333;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #ddd;
+  z-index: 1000;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.logo-format{
+     list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Menu */
+.hotbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.hotbar a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hotbar a:hover,
+.hotbar a.active {
+  color: #2e7d32;
+}
+
+.menu-toggle {
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  display: none; /* só aparece em telas pequenas */
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .hotbar {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #fff;
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 0 0 0 8px;
+  }
+
+  .hotbar ul {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .hotbar li {
+    border-bottom: 1px solid #eee;
+  }
+
+  .hotbar a {
+    display: block;
+    padding: 12px;
+  }
+
+  .hotbar.show {
+    display: block;
+  }
+}
+
+/* Hero banner */
+.hero {
+  background: url('campus.jpg') no-repeat center center/cover;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero .overlay {
+  background: rgba(64, 180, 51, 0.951);
+  padding: 40px;
+  border-radius: 10px;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 40px 0;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  text-decoration: none; /* remove sublinhado */
+  color: inherit; /* mantém cor do texto */
+  display: block; /* garante que ocupe o espaço como div */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+
+/* Galeria */
+.gallery {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Botão de download */
+.download-btn {
+  background-color: #09ff15a1;
+  color: white;
+  padding: 15px 35px;
+  font-size: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #1b5e20;
+  transform: scale(1.05);
+}

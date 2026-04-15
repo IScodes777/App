@@ -6,42 +6,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsivo -->
   <style>
     body {
-      font-family: Arial, sans-serif;
-      text-align: center;
+      font-family: 'Segoe UI', Arial, sans-serif;
       margin: 0;
-      background-color: #f5f5f5;
+      background-color: #f9f9f9;
+      color: #333;
       display: flex;
       flex-direction: column;
       min-height: 100vh;
     }
     header {
       background: linear-gradient(90deg, #2e7d32, #66bb6a);
-      padding: 20px;
+      padding: 30px 20px;
       color: white;
+      text-align: center;
     }
-    h1 {
+    header h1 {
       margin: 0;
-      font-size: 32px;
+      font-size: 36px;
     }
     main {
       flex: 1;
       padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
     }
-    p {
+    main h2 {
+      font-size: 24px;
+      margin-bottom: 15px;
+      color: #2e7d32;
+    }
+    main p {
       font-size: 18px;
-      margin-bottom: 30px;
-      color: #333;
+      margin-bottom: 25px;
+      line-height: 1.6;
+    }
+    ul {
+      text-align: left;
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 0;
+      list-style: none;
+    }
+    ul li {
+      background: #e8f5e9;
+      margin: 8px 0;
+      padding: 12px;
+      border-radius: 6px;
+      font-size: 16px;
     }
     .download-btn {
       background-color: #2e7d32;
       color: white;
-      padding: 15px 30px;
-      font-size: 18px;
+      padding: 15px 35px;
+      font-size: 20px;
       border: none;
       border-radius: 8px;
       cursor: pointer;
       text-decoration: none;
       transition: background-color 0.3s ease;
+      display: inline-block;
+      margin-top: 20px;
     }
     .download-btn:hover {
       background-color: #1b5e20;
@@ -51,18 +76,40 @@
       padding: 15px;
       font-size: 14px;
       color: #555;
+      text-align: center;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Informa Capau</h1>
+    <p>O aplicativo oficial de informações do IFPI Campus Paulistana</p>
   </header>
 
   <main>
-    <p>Baixe o aplicativo oficial em formato APK para Android.</p>
+    <h2>📱 Sobre o App</h2>
+    <p>
+      O <strong>Informa Capau</strong> foi desenvolvido para facilitar o acesso às notícias,
+      comunicados e informações importantes do IFPI Campus Paulistana. 
+      Tenha tudo na palma da sua mão, de forma rápida e prática.
+    </p>
+
+    <h2>✨ Recursos principais</h2>
+    <ul>
+      <li>Notícias e comunicados atualizados</li>
+      <li>Agenda de eventos do campus</li>
+      <li>Informações acadêmicas e administrativas</li>
+      <li>Interface simples e intuitiva</li>
+    </ul>
+
+    <h2>📥 Instalação</h2>
+    <p>
+      Para instalar, baixe o arquivo APK e abra no seu celular Android. 
+      Talvez seja necessário permitir a instalação de apps fora da Play Store.
+    </p>
+
     <a href="InformaCapau_1.1.0.apk" class="download-btn" download>
-      📥 Download APK
+      📥 Baixar APK
     </a>
   </main>
 
